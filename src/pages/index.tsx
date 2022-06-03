@@ -30,15 +30,17 @@ const IndexPage = () => {
       </Helmet>
 
       <section className="body-font font-raleway">
-        <div className="container mx-auto flex px-8 py-24 items-center justify-center flex-col">
+        <div className="container mx-auto flex px-8 pt-12 md:pt-24 pb-4 items-center justify-center flex-col">
           <FlippableAvatar />
           <div className="text-center lg:w-2/5 md:w-4/6 w-full">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
+            <h1 className="title-font text-5xl mb-4 font-medium">
               Clement Hoang
             </h1>
             <p className="mb-8 leading-relaxed text-slate-50">
-              I have a passion for building delightful products / find myself
-              content when there I have a passion fd In my free time, I love{' '}
+              A software engineer with a wide experience from early-stage
+              startups to large-scale engineering organizations. I am passionate
+              about designing and creating delightful product experiences. In my
+              free time, I love{' '}
               <a className="underline" href="">
                 writing
               </a>
@@ -50,51 +52,61 @@ const IndexPage = () => {
               <a className="underline" href="">
                 smashing shuttlecocks
               </a>
+              . I also provide{' '}
+              <a className="underline" href="">
+                consulting and mentorship
+              </a>
               .
             </p>
-
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
-              My links
-            </h1>
 
             <div className="flex flex-col justify-center">
               <ButtonWithIcon
                 text="See my open source"
                 iconName="logo-github"
-                className="bg-black-500 border border-white"
-              />
-              <ButtonWithIcon
-                text="Follow my (re)tweets"
-                iconName="logo-twitter"
-                className="bg-blue-500"
-              />
-              <ButtonWithIcon
-                text="Cook with my recipes"
-                iconName="restaurant"
+                className="bg-zinc-800 border border-white"
               />
               <ButtonWithIcon
                 text="Read my mind's dabbles"
                 iconName="logo-medium"
-                className="bg-black-500"
+                className="bg-zinc-800"
               />
-              <ButtonWithIcon text="Connect with me" iconName="logo-linkedin" />
+              <ButtonWithIcon
+                text="My resume"
+                iconName="briefcase"
+                className="bg-red-900"
+              />
               <ButtonWithIcon
                 text="Buy me coffee"
                 iconName="logo-venmo"
-                className="bg-indigo-500"
+                className="bg-amber-900"
               />
-              <ButtonWithIcon text="My resume" iconName="briefcase" />
+              <ButtonWithIcon
+                text="Cook with my recipes"
+                iconName="restaurant"
+                className="bg-orange-700"
+              />
+              <ButtonWithIcon
+                text="Connect with me"
+                iconName="logo-linkedin"
+                className="bg-blue-800"
+              />
+              <ButtonWithIcon
+                text="Follow my tweets"
+                iconName="logo-twitter"
+                className="bg-blue-500"
+              />
               <ButtonWithIcon
                 text="Let's chat"
                 iconName="paper-plane-outline"
+                className="bg-green-800"
+                shouldAnimate
               />
             </div>
-
-            <footer>
-              <span>&copy; {new Date().getFullYear()} Clement Hoang</span>
-            </footer>
           </div>
         </div>
+        <footer className="pb-8 md:pb-20 flex justify-center">
+          <span>&copy; {new Date().getFullYear()} Clement Hoang</span>
+        </footer>
       </section>
     </main>
   );
