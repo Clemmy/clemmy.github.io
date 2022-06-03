@@ -6,6 +6,8 @@ import { useWindowSize } from '../hooks/useWindowSize';
 // Flipping based on https://davidwalsh.name/css-flip
 const containerStyles = css`
   perspective: 2000px;
+  // Fix hover hitbox to be within the circle
+  clip-path: circle(50% at 50% 50%);
 
   &:hover .flipper {
     transform: rotateY(180deg);
@@ -44,6 +46,8 @@ export function FlippableAvatar() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
+    // This ensures that the container maintains an aspect ratio of 1
+    // despite the children's relative positioning (which makes height 0)
     if (containerRef.current) {
       setContainerHeight(containerRef.current.clientWidth);
     }
