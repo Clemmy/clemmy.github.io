@@ -14,11 +14,12 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "prettier": "prettier --write \"src/**/*.{tsx,ts}\""
+    "prettier": "prettier --write \"src/**/*.{tsx,ts,css}\""
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "classnames": "^2.3.1",
     "gatsby": "^4.15.2",
     "gatsby-plugin-emotion": "^7.15.0",
     "gatsby-plugin-google-analytics": "^4.15.0",

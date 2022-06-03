@@ -1,12 +1,22 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
+import { ButtonWithIcon } from '../components/ButtonWithIcon';
+import { FlippableAvatar } from '../components/FlippableAvatar';
 
 const IndexPage = () => {
   return (
-    <main>
+    <main className="bg-slate-900 text-sky-400">
       <Helmet>
-        <title>Your Title</title>
-        <meta name="description" content="Description of your page" />
+        <title>Clement Hoang</title>
+        <meta
+          name="description"
+          content="Where you can find a map of Clement's online footprint."
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Raleway"
+          rel="stylesheet"
+          type="text/css"
+        />
         <script
           defer
           type="module"
@@ -18,43 +28,74 @@ const IndexPage = () => {
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
       </Helmet>
-      <ion-icon name="heart"></ion-icon>
-      <ion-icon name="heart"></ion-icon>
-      <ion-icon name="heart-outline"></ion-icon>
-      <ion-icon name="heart-sharp"></ion-icon>
-      <ion-icon name="logo-github"></ion-icon>
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img
-            className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
-            alt="hero"
-            src="https://dummyimage.com/720x600"
-          />
-          <div className="text-center lg:w-2/3 w-full">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Microdosing synth tattooed vexillologist
+
+      <section className="body-font font-raleway">
+        <div className="container mx-auto flex px-8 py-24 items-center justify-center flex-col">
+          <FlippableAvatar />
+          <div className="text-center lg:w-2/5 md:w-4/6 w-full">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
+              Clement Hoang
             </h1>
-            <p className="mb-8 leading-relaxed">
-              Meggings kinfolk echo park stumptown DIY, kale chips beard
-              jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice
-              godard disrupt ramps hexagon mustache umami snackwave tilde
-              chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac
-              mlkshk freegan photo booth af fingerstache pitchfork.
+            <p className="mb-8 leading-relaxed text-slate-50">
+              I have a passion for building delightful products / find myself
+              content when there I have a passion fd In my free time, I love{' '}
+              <a className="underline" href="">
+                writing
+              </a>
+              ,{' '}
+              <a className="underline" href="">
+                cooking
+              </a>
+              , and{' '}
+              <a className="underline" href="">
+                smashing shuttlecocks
+              </a>
+              .
             </p>
-            <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Button
-              </button>
-              <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Button
-              </button>
+
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
+              My links
+            </h1>
+
+            <div className="flex flex-col justify-center">
+              <ButtonWithIcon
+                text="See my open source"
+                iconName="logo-github"
+                className="bg-black-500 border border-white"
+              />
+              <ButtonWithIcon
+                text="Follow my (re)tweets"
+                iconName="logo-twitter"
+                className="bg-blue-500"
+              />
+              <ButtonWithIcon
+                text="Cook with my recipes"
+                iconName="restaurant"
+              />
+              <ButtonWithIcon
+                text="Read my mind's dabbles"
+                iconName="logo-medium"
+                className="bg-black-500"
+              />
+              <ButtonWithIcon text="Connect with me" iconName="logo-linkedin" />
+              <ButtonWithIcon
+                text="Buy me coffee"
+                iconName="logo-venmo"
+                className="bg-indigo-500"
+              />
+              <ButtonWithIcon text="My resume" iconName="briefcase" />
+              <ButtonWithIcon
+                text="Let's chat"
+                iconName="paper-plane-outline"
+              />
             </div>
+
+            <footer>
+              <span>&copy; {new Date().getFullYear()} Clement Hoang</span>
+            </footer>
           </div>
         </div>
       </section>
-      # About me I have a passion for building delightful products / find myself
-      content when there I have a passion fd In my free time, I love writing,
-      cooking, and smashing shuttlecocks. # My links # My Resume? # Let's chat
     </main>
   );
 };
