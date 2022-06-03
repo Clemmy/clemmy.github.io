@@ -26,7 +26,7 @@ module.exports = {
         }
       },
       animation: {
-        periodicSlideRight: 'slideRight 3s ease infinite',
+        periodicSlideRight: 'slideRight 1.5s ease infinite',
       }
     },
   },

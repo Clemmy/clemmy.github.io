@@ -1,58 +1,71 @@
-// /* entire container, keeps perspective */
-// .flip-container {
-// 	perspective: 1000px;
-// }
-// 	/* flip the pane when hovered */
-// 	.flip-container:hover .flipper, .flip-container.hover .flipper {
-// 		transform: rotateY(180deg);
-// 	}
-
-// .flip-container, .front, .back {
-// 	width: 320px;
-// 	height: 480px;
-// }
-
-// /* flip speed goes here */
-// .flipper {
-// 	transition: 0.6s;
-// 	transform-style: preserve-3d;
-
-// 	position: relative;
-// }
-
-// /* hide back of pane during swap */
-// .front, .back {
-// 	backface-visibility: hidden;
-
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// }
-
-// /* front pane, placed above back */
-// .front {
-// 	z-index: 2;
-// 	/* for firefox 31 */
-// 	transform: rotateY(0deg);
-// }
-
-// /* back, initially hidden pane */
-// .back {
-// 	transform: rotateY(180deg);
-// }
-
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import { css } from '@emotion/react';
+
+const containerStyles = css`
+  perspective: 2000px;
+
+  &:hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .flipper {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    will-change: transform;
+  }
+
+  .front {
+    backface-visibility: hidden;
+    width: 100%;
+    flex: 0 0 auto;
+
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+
+  .back {
+    backface-visibility: hidden;
+    width: 100%;
+    flex: 0 0 auto;
+    margin-left: -100%;
+
+    transform: rotateY(180deg);
+  }
+`;
 
 export function FlippableAvatar() {
   return (
-    <StaticImage
-      className="border lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover rounded-full"
-      src="../images/batur_center_2.png"
-      alt="Me looking at a mountain"
-      placeholder="blurred"
-      aspectRatio={1}
-      layout="constrained"
-    />
+    <div
+      css={containerStyles}
+      className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 rounded-full"
+    >
+      <div className="flipper">
+        <div className="front">
+          <StaticImage
+            className="border-4 object-cover rounded-full"
+            src="../images/batur_center_2.png"
+            alt="Me looking at a mountain"
+            placeholder="blurred"
+            aspectRatio={1}
+            layout="constrained"
+          />
+        </div>
+        <div className="back">
+          <StaticImage
+            className="border-4 object-cover rounded-full"
+            src="../images/batur_center_2.png"
+            alt="Me looking at a mountain"
+            placeholder="blurred"
+            aspectRatio={1}
+            layout="constrained"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
