@@ -4,7 +4,7 @@ import { FlippableAvatar } from '../components/FlippableAvatar';
 
 const IndexPage = () => {
   return (
-    <main className="bg-slate-900 text-sky-400">
+    <main className="bg-slate-900 text-sky-400 h-full">
       <Helmet>
         <title>Clement Hoang</title>
         <meta
