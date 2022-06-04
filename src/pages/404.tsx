@@ -1,5 +1,6 @@
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import { ButtonWithIcon } from '../components/ButtonWithIcon';
 
 const headingStyles = {
   marginTop: 0,
@@ -30,6 +31,14 @@ const NotFoundPage = () => {
         The page you requested could not be found
         <br />
         <Link to="/">Take me home</Link>.
+        
+        // This should be an internal Link
+        <ButtonWithIcon
+          text="Take me home"
+          href="/"
+          iconName="paper-plane"
+          className="bg-green-700"
+        />
       </p>
     </main>
   );
