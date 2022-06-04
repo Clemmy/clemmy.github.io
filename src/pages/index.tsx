@@ -61,41 +61,49 @@ const IndexPage = () => {
             <div className="flex flex-col justify-center">
               <ButtonWithIcon
                 text="See my open source"
+                href='https://github.com/clemmy'
                 iconName="logo-github"
                 className="bg-zinc-800 border border-white"
               />
               <ButtonWithIcon
-                text="Read my mind's dabbles"
+                text="Read my articles"
+                href='https://medium.com/@clemmmy'
                 iconName="logo-medium"
                 className="bg-zinc-800"
               />
               <ButtonWithIcon
-                text="My resume"
+                text="View my resume"
+                href='/resume.pdf'
                 iconName="briefcase"
                 className="bg-red-900"
               />
               <ButtonWithIcon
                 text="Buy me coffee"
+                href='asdf'
                 iconName="logo-venmo"
                 className="bg-amber-900"
               />
               <ButtonWithIcon
                 text="Cook with my recipes"
+                href='https://instagram.com/professor.pan'
                 iconName="restaurant"
                 className="bg-orange-700"
               />
               <ButtonWithIcon
                 text="Connect with me"
+                href='https://ca.linkedin.com/in/clementhoang'
                 iconName="logo-linkedin"
                 className="bg-blue-800"
               />
               <ButtonWithIcon
                 text="Follow my tweets"
+                href='https://twitter.com/c8hoang'
                 iconName="logo-twitter"
                 className="bg-blue-500"
               />
               <ButtonWithIcon
                 text="Let's chat"
+                href='mailto:me@clemmy.ninja'
                 iconName="paper-plane-outline"
                 className="bg-green-800"
                 shouldAnimate

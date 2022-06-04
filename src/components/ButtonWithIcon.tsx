@@ -2,6 +2,7 @@ import cx from 'classnames';
 
 type ButtonWithIconProps = {
   text: string;
+  href: string;
   iconName: string;
   className?: string;
   shouldAnimate?: boolean;
@@ -9,14 +10,17 @@ type ButtonWithIconProps = {
 
 export function ButtonWithIcon({
   text,
+  href,
   iconName,
   className,
   shouldAnimate = false,
 }: ButtonWithIconProps) {
   return (
-    <button
+    <a
+      href={href}
+      target="_blank"
       className={cx(
-        'mb-3 text-white border-0 py-2 px-6 hover:brightness-75 rounded text-lg flex items-center justify-center',
+        'mb-3 text-white border-0 py-2 px-6 hover:brightness-75 rounded text-lg flex items-center justify-center cursor',
         className,
         {
           'motion-safe:animate-periodicSlideRight': shouldAnimate,
@@ -25,6 +29,6 @@ export function ButtonWithIcon({
     >
       <ion-icon class="mr-2" name={iconName}></ion-icon>
       {text}
-    </button>
+    </a>
   );
 }
