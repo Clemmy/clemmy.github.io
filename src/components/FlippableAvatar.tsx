@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { css } from '@emotion/react';
 import { useWindowSize } from '../hooks/useWindowSize';

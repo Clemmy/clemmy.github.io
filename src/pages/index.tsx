@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { ButtonWithIcon } from '../components/ButtonWithIcon';
 import { FlippableAvatar } from '../components/FlippableAvatar';
