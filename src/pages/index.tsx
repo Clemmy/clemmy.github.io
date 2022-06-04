@@ -78,16 +78,16 @@ const IndexPage = () => {
                 className="bg-red-900"
               />
               <ButtonWithIcon
-                text="Buy me coffee"
-                href='asdf'
-                iconName="logo-venmo"
-                className="bg-amber-900"
-              />
-              <ButtonWithIcon
                 text="Cook with my recipes"
                 href='https://instagram.com/professor.pan'
                 iconName="restaurant"
-                className="bg-orange-700"
+                className="bg-orange-800"
+              />
+              <ButtonWithIcon
+                text="Buy me coffee"
+                href='asdf'
+                iconName="logo-venmo"
+                className="bg-yellow-800"
               />
               <ButtonWithIcon
                 text="Connect with me"
@@ -99,13 +99,13 @@ const IndexPage = () => {
                 text="Follow my tweets"
                 href='https://twitter.com/c8hoang'
                 iconName="logo-twitter"
-                className="bg-blue-500"
+                className="bg-blue-600"
               />
               <ButtonWithIcon
                 text="Let's chat"
                 href='mailto:me@clemmy.ninja'
-                iconName="paper-plane-outline"
-                className="bg-green-800"
+                iconName="paper-plane"
+                className="bg-green-700"
                 shouldAnimate
               />
             </div>
