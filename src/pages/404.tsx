@@ -1,11 +1,6 @@
 import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
-// styles
-const pageStyles = {
-  color: '#232129',
-  padding: '96px',
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
@@ -23,28 +18,18 @@ const codeStyles = {
   borderRadius: 4,
 };
 
-// markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
+    <main className="bg-slate-900 text-sky-400 h-screen">
+      <Helmet>
+        <title>404: Not found</title>
+      </Helmet>
+      <h1 style={headingStyles}>404</h1>
       <h1 style={headingStyles}>Page not found</h1>
       <p style={paragraphStyles}>
-        Sorry{' '}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{' '}
-        we couldn’t find what you were looking for.
+        The page you requested could not be found
         <br />
-        {process.env.NODE_ENV === 'development' ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">Take me home</Link>.
       </p>
     </main>
   );
