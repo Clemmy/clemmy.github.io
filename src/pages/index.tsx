@@ -4,7 +4,7 @@ import { FlippableAvatar } from '../components/FlippableAvatar';
 
 const IndexPage = () => {
   return (
-    <main className="bg-slate-900 text-sky-400 h-full">
+    <main className="bg-slate-900 text-slate-50 h-full">
       <Helmet>
         <title>Clement Hoang</title>
         <meta
@@ -32,10 +32,10 @@ const IndexPage = () => {
         <div className="container mx-auto flex px-8 pt-12 md:pt-24 pb-4 items-center justify-center flex-col">
           <FlippableAvatar />
           <div className="text-center lg:w-2/5 md:w-4/6 w-full">
-            <h1 className="title-font text-5xl mb-4 font-medium">
+            <h1 className="title-font text-5xl mb-4 font-medium text-sky-400">
               Clement Hoang
             </h1>
-            <p className="mb-8 leading-relaxed text-slate-50">
+            <p className="mb-8 leading-relaxed">
               A software engineer with a wide experience from early-stage
               startups to large-scale engineering organizations. I am passionate
               about designing and creating delightful product experiences. In my
