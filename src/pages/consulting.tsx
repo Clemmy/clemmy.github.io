@@ -1,10 +1,11 @@
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { ButtonWithIcon } from '../components/ButtonWithIcon';
+import { Layout } from '../components/Layout';
 
 const ConsultingPage = () => {
   return (
-    <main className="bg-slate-900 text-sky-400 h-screen">
+    <Layout className="h-screen">
       <Helmet>
         <title>Consulting and Mentorship</title>
       </Helmet>
@@ -13,7 +14,6 @@ const ConsultingPage = () => {
         system design - FE, web - career growth As of now, im providing this for
         free and my time is limited. send me a msg wih an ovewview and ill get
         back asap
-
         <ButtonWithIcon
           text="Contact me"
           href="mailto:me@clemmy.ninja"
@@ -21,7 +21,7 @@ const ConsultingPage = () => {
           className="bg-green-700"
         />
       </p>
-    </main>
+    </Layout>
   );
 };
 

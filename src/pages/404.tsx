@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { ButtonWithIcon } from '../components/ButtonWithIcon';
+import { Layout } from '../components/Layout';
 
 const headingStyles = {
   marginTop: 0,
@@ -21,7 +22,7 @@ const codeStyles = {
 
 const NotFoundPage = () => {
   return (
-    <main className="bg-slate-900 text-sky-400 h-screen">
+    <Layout className="h-screen">
       <Helmet>
         <title>404: Not found</title>
       </Helmet>
@@ -30,9 +31,7 @@ const NotFoundPage = () => {
       <p style={paragraphStyles}>
         The page you requested could not be found
         <br />
-        <Link to="/">Take me home</Link>.
-        
-        // This should be an internal Link
+        <Link to="/">Take me home</Link>. // This should be an internal Link
         <ButtonWithIcon
           text="Take me home"
           href="/"
@@ -40,7 +39,7 @@ const NotFoundPage = () => {
           className="bg-green-700"
         />
       </p>
-    </main>
+    </Layout>
   );
 };
 
