@@ -3,42 +3,36 @@ import { Helmet } from 'react-helmet';
 import { ButtonWithIcon } from '../components/ButtonWithIcon';
 import { Layout } from '../components/Layout';
 
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
-
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: '#8A6534',
-  padding: 4,
-  backgroundColor: '#FFF4DB',
-  fontSize: '1.25rem',
-  borderRadius: 4,
-};
-
 const NotFoundPage = () => {
   return (
     <Layout className="h-screen">
       <Helmet>
         <title>404: Not found</title>
       </Helmet>
-      <h1 style={headingStyles}>404</h1>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        The page you requested could not be found
-        <br />
-        <Link to="/">Take me home</Link>. // This should be an internal Link
+      // padding-top 18 vh
+      <div className="flex flex-col items-center text-center lg:w-2/5 md:w-4/6 w-full">
+        <h1 className="text-7xl md:text-9xl mb-4 font-medium text-sky-400">
+          404
+        </h1>
+        <h1 className="text-4xl md:text-5xl mb-4 font-medium text-sky-400">
+          Page not found
+        </h1>
+        <p className="mb-8 leading-relaxed">
+          The page you requested could not be found. If you feel like this is a
+          mistake,{' '}
+          <a className="underline" href="mailto:me@clemmy.ninja">
+            please contact me
+          </a>
+          .
+        </p>
         <ButtonWithIcon
           text="Take me home"
           href="/"
           iconName="paper-plane"
-          className="bg-green-700"
+          className="bg-green-700 s:w-3/4 w-5/6"
+          isInternal
         />
-      </p>
+      </div>
     </Layout>
   );
 };

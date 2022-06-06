@@ -32,7 +32,7 @@ const IndexPage = () => {
       </Helmet>
       <FlippableAvatar />
       <div className="text-center lg:w-2/5 md:w-4/6 w-full">
-        <h1 className="title-font text-5xl mb-4 font-medium text-sky-400">
+        <h1 className="text-5xl mb-4 font-medium text-sky-400">
           Clement Hoang
         </h1>
         <p className="mb-8 leading-relaxed">
