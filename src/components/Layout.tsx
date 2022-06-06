@@ -1,4 +1,5 @@
 import cx from 'classnames';
+import { Helmet } from 'react-helmet';
 
 export function Layout({
   children,
@@ -14,6 +15,23 @@ export function Layout({
         className
       )}
     >
+      <Helmet>
+        <link
+          href="https://fonts.googleapis.com/css?family=Raleway"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <script
+          defer
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+          defer
+          noModule
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+      </Helmet>
       <div className="container mx-auto flex px-8 pt-12 md:pt-24 pb-4 items-center justify-center flex-col">
         {children}
       </div>

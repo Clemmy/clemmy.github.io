@@ -14,21 +14,6 @@ const IndexPage = () => {
           name="description"
           content="Where you can find a map of Clement's online footprint."
         />
-        <link
-          href="https://fonts.googleapis.com/css?family=Raleway"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <script
-          defer
-          type="module"
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-          defer
-          noModule
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        ></script>
       </Helmet>
       <FlippableAvatar />
       <div className="text-center lg:w-2/5 md:w-4/6 w-full">
