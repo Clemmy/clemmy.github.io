@@ -12,12 +12,20 @@ module.exports = {
             transform: 'translateX(0%)',
           },
         
-          '70%': {
+          '60%': {
             transform: 'translateX(0%)',
           },
 
-          '85%': {
+          '70%': {
             transform: 'translateX(1%)',
+          },
+        
+          '80%': {
+            transform: 'translateX(0%)',
+          },
+
+          '90%': {
+            transform: 'translateX(0.8%)',
           },
         
           '100%': {
@@ -26,7 +34,7 @@ module.exports = {
         }
       },
       animation: {
-        periodicSlideRight: 'slideRight 1.5s ease infinite',
+        periodicSlideRight: 'slideRight 2s ease infinite',
       }
     },
   },
