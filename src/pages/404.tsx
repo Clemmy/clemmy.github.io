@@ -9,8 +9,7 @@ const NotFoundPage = () => {
       <Helmet>
         <title>404: Not found</title>
       </Helmet>
-      // padding-top 18 vh
-      <div className="flex flex-col items-center text-center lg:w-2/5 md:w-4/6 w-full">
+      <div className="flex flex-col items-center text-center lg:w-2/5 md:w-4/6 w-full pt-[16vh]">
         <h1 className="text-7xl md:text-9xl mb-4 font-medium text-sky-400">
           404
         </h1>
