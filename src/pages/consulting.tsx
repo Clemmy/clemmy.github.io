@@ -32,26 +32,41 @@ const ConsultingPage = () => {
           the community.
         </p>
         <h1 className="text-4xl mb-4 font-medium text-sky-400">Topics</h1>
-        <ul>
-          <li>Breaking into tech</li>- resume critique - interview topics -
-          salary negotiation
-          <li>Project consultation</li>- requirements gathering - scoping &
-          execution - system design - technical decisions
-          <li>Web development</li>- performance & optimization - choosing a web
-          stack
-          <li>Career growth</li>- Productivity & time management - code review -
-          best practices
-        </ul>
         <p className="mb-8 leading-relaxed">
-          I'm more than happy to chat about any of the topics I listed above. To
+          I'm more than happy to chat about any of the topics listed below. To
           reach me, send me an email with an overview of your requested topic
           area and I'll get back to you as soon as possible.
         </p>
+        <ul className="list-disc">
+          <li className='mb-1'>
+            <span className="font-bold">Breaking into tech</span> - Having
+            worked at over 8 different companies and applying to hundreds more,
+            I am familiar with the makings of a good resume, interview themes,
+            and salary negotiation.
+          </li>
+          <li className='mb-1'>
+            <span className="font-bold">Project consultation</span> - From
+            gathering requirements to architecture, scoping, and execution, I
+            can help you maximize your business impact.
+          </li>
+          <li className='mb-1'>
+            <span className="font-bold">Web development</span> - My roots
+            started in ASP.NET MVC and Angular, and my go-to front-end library
+            is now React. I can also speak to performance and optimization, from
+            my extensive experience with server-side rendering, code-splitting,
+            and designing interactive applications.
+          </li>
+          <li className='mb-1'>
+            <span className="font-bold">Career growth</span> - How to get to the
+            next level in your software engineering journey. I am provide advice
+            on time management, code review, and general best practices.
+          </li>
+        </ul>
         <ButtonWithIcon
           text="Schedule a consultation"
           href="mailto:me@clemmy.ninja"
           iconName="paper-plane"
-          className="bg-green-700"
+          className="bg-green-700 mt-8"
         />
         <div>What clients say</div>- Software Engineer at Fintech Unicorn -
         Software Engineer at Fintech Unicorn - Software Engineer at Productivity

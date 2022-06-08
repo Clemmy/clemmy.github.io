@@ -16,10 +16,15 @@ export function Layout({
       )}
     >
       <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          href="https://fonts.googleapis.com/css?family=Raleway"
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap"
           rel="stylesheet"
-          type="text/css"
         />
         <script
           defer
