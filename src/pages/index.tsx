@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { ButtonWithIcon } from '../components/ButtonWithIcon';
 import { FlippableAvatar } from '../components/FlippableAvatar';
@@ -25,21 +25,17 @@ const IndexPage = () => {
           to large-scale engineering organizations. I am passionate about
           designing and creating delightful product experiences. In my free
           time, I love{' '}
-          <a className="underline" href="">
+          <a className="underline" href="https://medium.com/@clemmmy">
             writing
           </a>
           ,{' '}
-          <a className="underline" href="">
+          <a className="underline" href="https://instagram.com/professor.pan">
             cooking
           </a>
-          , and{' '}
-          <a className="underline" href="">
-            smashing shuttlecocks
-          </a>
-          . I also provide{' '}
-          <a className="underline" href="">
+          , and playing badminton. I also provide{' '}
+          <Link className="underline" to="/consulting" target="_blank">
             consulting and mentorship
-          </a>
+          </Link>
           .
         </p>
 
