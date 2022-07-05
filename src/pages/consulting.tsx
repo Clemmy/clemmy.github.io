@@ -10,7 +10,7 @@ const ConsultingPage = () => {
         <title>Consulting and Mentorship</title>
       </Helmet>
       <div className="flex flex-col lg:w-2/5 md:w-4/6 w-full">
-        <h1 className="text-5xl mb-4 font-medium text-sky-400">
+        <h1 className="text-5xl mb-4 font-medium leading-tight text-sky-400">
           Consulting and Mentorship
         </h1>
         <p className="mb-8 leading-relaxed">
