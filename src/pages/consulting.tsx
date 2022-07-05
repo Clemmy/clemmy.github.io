@@ -17,9 +17,7 @@ const ConsultingPage = () => {
           I am a software engineer that has worked in a variety of roles ranging
           from early-stage startups to bigger organizations. My strength lies in
           dealing with ambiguity, breaking down complex pieces of product
-          requirements into MVPs that maximize user impact. I also make informed
-          technical choices to design systems that prioritize maintainability
-          and evolvability.
+          requirements into MVPs that maximize user impact.
           <br />
           <br />
           <span className="italic">
@@ -33,38 +31,43 @@ const ConsultingPage = () => {
           the community.
         </p>
         <h1 className="text-4xl mb-4 font-medium text-sky-400">Topics</h1>
-        <p className="mb-8 leading-relaxed">
+        <p className="leading-relaxed">
           I'm more than happy to chat about any of the topics listed below. To
           reach me, send me an email with an overview of your requested topic
           area and I'll get back to you as soon as possible.
         </p>
-        // this is pretty ugly // just use headings with paragraphs underneath
-        instead // raleway is kinda hard to read
-        <ul className="list-disc">
-          <li className="mb-1">
-            <span className="font-bold">Breaking into tech</span> - Having
-            worked at over 8 different companies and applying to hundreds more,
-            I am familiar with the makings of a good resume, interview themes,
-            and salary negotiation.
-          </li>
-          <li className="mb-1">
-            <span className="font-bold">Project consultation</span> - From
-            gathering requirements to architecture, scoping, and execution, I
-            can help you maximize your business impact.
-          </li>
-          <li className="mb-1">
-            <span className="font-bold">Web development</span> - My roots
-            started in ASP.NET MVC and Angular, and my go-to front-end library
-            is now React. I can also speak to performance and optimization, from
-            my extensive experience with server-side rendering, code-splitting,
-            and designing interactive applications.
-          </li>
-          <li className="mb-1">
-            <span className="font-bold">Career growth</span> - How to get to the
-            next level in your software engineering journey. I am provide advice
-            on time management, code review, and general best practices.
-          </li>
-        </ul>
+        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400">
+          👊 Breaking into tech
+        </h2>
+        <p className="leading-relaxed">
+          Having worked at over 8 different companies and applying to hundreds
+          more, I can help you with improving your resume, cracking the coding
+          interview, as well as salary negotiation.
+        </p>
+        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400">
+          🚧 Project consultation
+        </h2>
+        <p className="leading-relaxed">
+          From gathering requirements to architecture, scoping, and execution, I
+          can help you maximize your business impact.
+        </p>
+        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400">
+          🌐 Web development
+        </h2>
+        <p className="leading-relaxed">
+          My roots started in ASP.NET MVC and Angular, and my go-to front-end
+          library is now React. I can also speak to performance and
+          optimization, from my extensive experience with server-side rendering,
+          code-splitting, and designing interactive applications.
+        </p>
+        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400">
+          📈 Career growth
+        </h2>
+        <p className="leading-relaxed">
+          How to get to the next level in your software engineering journey. I
+          can provide advice on time management, code review, and general best
+          practices.
+        </p>
         <ButtonWithIcon
           text="Schedule a consultation"
           href="mailto:me@clemmy.ninja"
