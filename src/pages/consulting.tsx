@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { ButtonWithIcon } from '../components/ButtonWithIcon';
 import { Layout } from '../components/Layout';
+import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
 
 const ConsultingPage = () => {
   return (
@@ -8,7 +9,7 @@ const ConsultingPage = () => {
       <Helmet>
         <title>Consulting and Mentorship</title>
       </Helmet>
-      <div className="lg:w-2/5 md:w-4/6 w-full">
+      <div className="flex flex-col lg:w-2/5 md:w-4/6 w-full">
         <h1 className="text-5xl mb-4 font-medium text-sky-400">
           Consulting and Mentorship
         </h1>
@@ -37,26 +38,28 @@ const ConsultingPage = () => {
           reach me, send me an email with an overview of your requested topic
           area and I'll get back to you as soon as possible.
         </p>
+        // this is pretty ugly // just use headings with paragraphs underneath
+        instead // raleway is kinda hard to read
         <ul className="list-disc">
-          <li className='mb-1'>
+          <li className="mb-1">
             <span className="font-bold">Breaking into tech</span> - Having
             worked at over 8 different companies and applying to hundreds more,
             I am familiar with the makings of a good resume, interview themes,
             and salary negotiation.
           </li>
-          <li className='mb-1'>
+          <li className="mb-1">
             <span className="font-bold">Project consultation</span> - From
             gathering requirements to architecture, scoping, and execution, I
             can help you maximize your business impact.
           </li>
-          <li className='mb-1'>
+          <li className="mb-1">
             <span className="font-bold">Web development</span> - My roots
             started in ASP.NET MVC and Angular, and my go-to front-end library
             is now React. I can also speak to performance and optimization, from
             my extensive experience with server-side rendering, code-splitting,
             and designing interactive applications.
           </li>
-          <li className='mb-1'>
+          <li className="mb-1">
             <span className="font-bold">Career growth</span> - How to get to the
             next level in your software engineering journey. I am provide advice
             on time management, code review, and general best practices.
@@ -68,11 +71,8 @@ const ConsultingPage = () => {
           iconName="paper-plane"
           className="bg-green-700 mt-8"
         />
-        <div>What clients say</div>- Software Engineer at Fintech Unicorn -
-        Software Engineer at Fintech Unicorn - Software Engineer at Productivity
-        Startup - Intern at Fintech Unicorn - Intern at Fintech Unicorn -
-        Software Engineer at Tesla - Senior Software Engineer at LinkedIn -
-        Software Engineer at Microsoft - CEO of E-Commerce Startup
+        <span className="inline-block h-1 w-20 rounded bg-sky-400 mt-6 mb-4 self-center"></span>
+        <TestimonialsCarousel />
       </div>
     </Layout>
   );
