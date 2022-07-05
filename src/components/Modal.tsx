@@ -8,6 +8,8 @@ function Modal({
 }: {
   children: React.ReactNode;
   isOpen: boolean;
+  // Note that the modal contents children needs to stop event propagation
+  // or else any clicks in the modal will trigger handleClose to be called
   handleClose: () => void;
 }) {
   useEffect(() => {
@@ -30,6 +32,7 @@ function Modal({
       <div
         className="backdrop fixed inset-0 flex flex-col justify-center items-center z-50 p-2 bg-black bg-opacity-40"
         aria-modal={true}
+	onClick={handleClose}
       >
 	{children}
       </div>

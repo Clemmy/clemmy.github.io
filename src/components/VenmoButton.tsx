@@ -3,6 +3,8 @@ import cx from 'classnames';
 import { StaticImage } from 'gatsby-plugin-image';
 import Modal from './Modal';
 
+const VENMO_URL = 'https://venmo.com/code?user_id=1776456220803072919'
+
 export function VenmoButton() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
@@ -21,10 +23,10 @@ export function VenmoButton() {
         </div>
       </button>
       <Modal handleClose={() => setIsModalOpen(false)} isOpen={isModalOpen}>
-        <div className="flex items-center justify-center p-4 sm:p-0">
+        <div className="flex items-center justify-center p-4 sm:p-0" onClick={(e) => e.stopPropagation()}>
           {/* transform transition-all */}
-          <div className="relative overflow-hidden rounded max-w-lg">
-            <div className="flex-flex-col w-full bg-yellow-800 p-4 text-white">
+          <div className="relative overflow-hidden rounded-lg max-w-sm">
+            <div className="flex-flex-col w-full bg-yellow-800 p-4 text-white text-center">
               <div className="text-right">
                 <ion-icon
                   name="close-outline"
@@ -32,9 +34,17 @@ export function VenmoButton() {
                   onClick={() => setIsModalOpen(false)}
                 />
               </div>
-              <div className="mb-2">
+              <div
+                className="my-4 cursor-pointer"
+                onClick={() => {
+                  window.open(
+                    VENMO_URL,
+                    '_blank'
+                  );
+                }}
+              >
                 <StaticImage
-                  className="h-full object-contain"
+                  className="h-full object-contain rounded"
                   aspectRatio={0.70573}
                   src="../images/venmo_qr_code.png"
                   alt="Venmo QR Code"
@@ -42,14 +52,16 @@ export function VenmoButton() {
                   layout="constrained"
                 />
               </div>
-              Or{' '}
-              <a
-                className="underline"
-                href="https://venmo.com/code?user_id=1776456220803072919"
-                target="_blank"
-              >
-                click here to go directly to my Venmo page.
-              </a>
+              <span className="text-lg leading-relaxed">
+                Or{' '}
+                <a
+                  className="underline"
+                  href={VENMO_URL}
+                  target="_blank"
+                >
+                  click here.
+                </a>
+              </span>
             </div>
           </div>
         </div>
