@@ -45,7 +45,7 @@ const ConsultingPage = () => {
           interview, as well as salary negotiation.
         </p>
         <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400">
-          🚧 Project consultation
+          👷‍♀️ Project consultation
         </h2>
         <p className="leading-relaxed">
           From gathering requirements to architecture, scoping, and execution, I
