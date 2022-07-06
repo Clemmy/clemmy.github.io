@@ -14,41 +14,36 @@ function VenmoModal({
 }) {
   return (
     <Modal handleClose={() => setIsModalOpen(false)} isOpen={isModalOpen}>
-      <div
-        className="flex items-center justify-center p-4 sm:p-0"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="relative overflow-hidden rounded-lg max-w-sm">
-          <div className="flex-flex-col w-full bg-yellow-800 p-4 text-white text-center">
-            <div className="text-right">
-              <ion-icon
-                name="close-outline"
-                class="cursor-pointer text-xl"
-                onClick={() => setIsModalOpen(false)}
-              />
-            </div>
-            <div
-              className="my-4 cursor-pointer"
-              onClick={() => {
-                window.open(VENMO_URL, '_blank');
-              }}
-            >
-              <StaticImage
-                className="h-full object-contain rounded"
-                aspectRatio={0.70573}
-                src="../images/venmo_qr_code.png"
-                alt="Venmo QR Code"
-                placeholder="blurred"
-                layout="constrained"
-              />
-            </div>
-            <span className="text-lg leading-relaxed">
-              Or{' '}
-              <a className="underline" href={VENMO_URL} target="_blank">
-                click here.
-              </a>
-            </span>
+      <div className="relative overflow-hidden rounded-lg max-w-sm">
+        <div className="flex-flex-col w-full bg-yellow-800 p-4 text-white text-center">
+          <div className="text-right">
+            <ion-icon
+              name="close-outline"
+              class="cursor-pointer text-xl"
+              onClick={() => setIsModalOpen(false)}
+            />
           </div>
+          <div
+            className="my-4 cursor-pointer"
+            onClick={() => {
+              window.open(VENMO_URL, '_blank');
+            }}
+          >
+            <StaticImage
+              className="h-full object-contain rounded"
+              aspectRatio={0.70573}
+              src="../images/venmo_qr_code.png"
+              alt="Venmo QR Code"
+              placeholder="blurred"
+              layout="constrained"
+            />
+          </div>
+          <span className="text-lg leading-relaxed">
+            Or{' '}
+            <a className="underline" href={VENMO_URL} target="_blank">
+              click here.
+            </a>
+          </span>
         </div>
       </div>
     </Modal>
