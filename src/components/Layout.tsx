@@ -1,5 +1,6 @@
 import cx from 'classnames';
 import { Helmet } from 'react-helmet';
+import { initTracking } from '../utils/tracking';
 
 export function Layout({
   children,
@@ -8,6 +9,8 @@ export function Layout({
   children: React.ReactNode;
   className?: string;
 }) {
+  initTracking();
+
   return (
     <main
       className={cx(

@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react';
 import cx from 'classnames';
 import { StaticImage } from 'gatsby-plugin-image';
 import Modal from './Modal';
+import { trackButtonClick } from '../utils/tracking';
 
 const VENMO_URL = 'https://venmo.com/code?user_id=1776456220803072919';
 
@@ -59,7 +60,8 @@ export function VenmoButton() {
           'text-white border-0 py-2 px-6 hover:brightness-75 flex flex-col items-center justify-center rounded-t bg-yellow-800 w-full cursor mb-3.5'
         )}
         onClick={() => {
-          setIsModalOpen(!isModalOpen);
+          setIsModalOpen(true);
+          trackButtonClick({ text: 'Buy me a coffee' })
         }}
       >
         <div className="flex items-center justify-center">

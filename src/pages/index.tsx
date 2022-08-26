@@ -4,6 +4,7 @@ import { ButtonWithIcon } from '../components/ButtonWithIcon';
 import { Avatar } from '../components/Avatar';
 import { Layout } from '../components/Layout';
 import { VenmoButton } from '../components/VenmoButton';
+import { trackLinkClick } from '../utils/tracking';
 
 const IndexPage = () => {
   return (
@@ -25,15 +26,45 @@ const IndexPage = () => {
           to large-scale engineering organizations. I am passionate about
           designing and creating delightful product experiences. In my free
           time, I love{' '}
-          <a className="underline" href="https://medium.com/@clemmmy">
+          <a
+            className="underline"
+            href="https://medium.com/@clemmmy"
+            target='_blank'
+            onClick={() => {
+              trackLinkClick({
+                text: 'writing',
+                href: 'https://medium.com/@clemmmy',
+              });
+            }}
+          >
             writing
           </a>
           ,{' '}
-          <a className="underline" href="https://instagram.com/professor.pan">
+          <a
+            className="underline"
+            href="https://instagram.com/professor.pan"
+            target='_blank'
+            onClick={() => {
+              trackLinkClick({
+                text: 'cooking',
+                href: 'https://instagram.com/professor.pan',
+              });
+            }}
+          >
             cooking
           </a>
           , and playing badminton. I also provide{' '}
-          <Link className="underline" to="/consulting" target="_blank">
+          <Link
+            className="underline"
+            to="/consulting"
+            target="_blank"
+            onClick={() => {
+              trackLinkClick({
+                text: 'consulting and mentorship',
+                href: '/consulting',
+              });
+            }}
+          >
             consulting and mentorship
           </Link>
           .

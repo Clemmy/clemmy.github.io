@@ -1,6 +1,8 @@
 import cx from 'classnames';
 import { Link } from 'gatsby';
-import {Fragment} from 'react';
+import { Fragment } from 'react';
+import mixpanel from 'mixpanel-browser';
+import { trackButtonClick } from '../utils/tracking';
 
 type ButtonWithIconProps = {
   text: string;
@@ -34,11 +36,27 @@ export function ButtonWithIcon({
     </Fragment>
   );
 
+  const trackClick = () => trackButtonClick({ text, href });
+
   if (isInternal) {
-    return <Link to={href} target="_blank" className={classNames}>{inner}</Link>;
+    return (
+      <Link
+        to={href}
+        onClick={trackClick}
+        target="_blank"
+        className={classNames}
+      >
+        {inner}
+      </Link>
+    );
   } else {
     return (
-      <a href={href} target="_blank" className={classNames}>
+      <a
+        href={href}
+        onClick={trackClick}
+        target="_blank"
+        className={classNames}
+      >
         {inner}
       </a>
     );
