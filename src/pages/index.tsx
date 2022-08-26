@@ -52,12 +52,13 @@ const IndexPage = () => {
             iconName="logo-medium"
             className="bg-zinc-800"
           />
-          <ButtonWithIcon
+          {/* Re-add resume once it's updated */}
+          {/* <ButtonWithIcon
             text="View my resume"
             href="/resume.pdf"
             iconName="briefcase"
             className="bg-red-900"
-          />
+          /> */}
           <ButtonWithIcon
             text="Cook with my recipes"
             href="https://instagram.com/professor.pan"
