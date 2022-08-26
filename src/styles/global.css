@@ -23,3 +23,12 @@ body {
 #gatsby-focus-wrapper {
   min-height: 100%;
 }
+
+/*
+ * Need this to prevent weird issues with StaticImage
+ * https://stackoverflow.com/questions/66835241/gatsby-image-plugin-not-displaying-properly-on-ios-devices
+ */
+.gatsby-image-wrapper {
+  position: relative;
+  z-index: 0; 
+}
