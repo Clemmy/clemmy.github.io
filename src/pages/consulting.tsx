@@ -16,7 +16,7 @@ const ConsultingPage = () => {
           Consulting and Mentorship
         </h1>
         <p className="mb-8 leading-relaxed">
-          I am a software engineer that has worked in a variety of roles ranging
+          I am a software engineer who has worked in a variety of roles ranging
           from early-stage startups to bigger organizations. My strength lies in
           dealing with ambiguity, breaking down complex pieces of product
           requirements into MVPs that maximize user impact.
