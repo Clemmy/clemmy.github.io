@@ -32,7 +32,9 @@ const ConsultingPage = () => {
           I have learned a great deal this way and would love to give back to
           the community.
         </p>
-        <h1 className="text-4xl mb-4 font-medium text-sky-400 font-semibold">Topics</h1>
+        <h1 className="text-4xl mb-4 font-medium text-sky-400 font-semibold">
+          Topics
+        </h1>
         <p className="leading-relaxed">
           I'm more than happy to chat about any of the topics listed below. To
           reach me, send me an email with an overview of your requested topic
@@ -67,8 +69,8 @@ const ConsultingPage = () => {
         </h2>
         <p className="leading-relaxed">
           How to get to the next level in your software engineering journey. I
-          can provide advice on time management, code review, and general best
-          practices.
+          can provide advice on code review, general best practices, time
+          management, collaboration, and tech leadership.
         </p>
         <ButtonWithIcon
           text="Schedule a consultation"
