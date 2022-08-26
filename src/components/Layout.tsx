@@ -11,7 +11,7 @@ export function Layout({
   return (
     <main
       className={cx(
-        'bg-slate-900 text-slate-50 body-font font-raleway',
+        'bg-slate-900 text-slate-50 body-font font-quicksand text-lg',
         className
       )}
     >
@@ -21,10 +21,6 @@ export function Layout({
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap"
-          rel="stylesheet"
         />
         <script
           defer

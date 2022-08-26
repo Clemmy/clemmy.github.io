@@ -12,7 +12,7 @@ const ConsultingPage = () => {
       </Helmet>
       <div className="flex flex-col lg:w-2/5 md:w-4/6 w-full">
         <BackToHome className="mb-6" />
-        <h1 className="text-5xl mb-4 font-medium leading-tight text-sky-400">
+        <h1 className="text-5xl mb-4 font-medium leading-tight text-sky-400 font-semibold">
           Consulting and Mentorship
         </h1>
         <p className="mb-8 leading-relaxed">
@@ -32,13 +32,13 @@ const ConsultingPage = () => {
           I have learned a great deal this way and would love to give back to
           the community.
         </p>
-        <h1 className="text-4xl mb-4 font-medium text-sky-400">Topics</h1>
+        <h1 className="text-4xl mb-4 font-medium text-sky-400 font-semibold">Topics</h1>
         <p className="leading-relaxed">
           I'm more than happy to chat about any of the topics listed below. To
           reach me, send me an email with an overview of your requested topic
           area and I'll get back to you as soon as possible.
         </p>
-        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400">
+        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400 font-semibold">
           👊 Breaking into tech
         </h2>
         <p className="leading-relaxed">
@@ -46,14 +46,14 @@ const ConsultingPage = () => {
           more, I can help you with improving your resume, cracking the coding
           interview, as well as salary negotiation.
         </p>
-        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400">
+        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400 font-semibold">
           👷‍♀️ Project consultation
         </h2>
         <p className="leading-relaxed">
           From gathering requirements to architecture, scoping, and execution, I
           can help you maximize your business impact.
         </p>
-        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400">
+        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400 font-semibold">
           🌐 Web development
         </h2>
         <p className="leading-relaxed">
@@ -62,7 +62,7 @@ const ConsultingPage = () => {
           optimization, from my extensive experience with server-side rendering,
           code-splitting, and designing interactive applications.
         </p>
-        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400">
+        <h2 className="text-2xl mt-4 mb-2 font-medium text-sky-400 font-semibold">
           📈 Career growth
         </h2>
         <p className="leading-relaxed">

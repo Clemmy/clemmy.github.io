@@ -17,7 +17,7 @@ const IndexPage = () => {
       </Helmet>
       <Avatar />
       <div className="text-center lg:w-2/5 md:w-4/6 w-full">
-        <h1 className="text-5xl mb-4 font-medium leading-tight text-sky-400">
+        <h1 className="text-5xl mb-4 font-semibold leading-tight text-sky-400">
           Clement Hoang
         </h1>
         <p className="mb-8 leading-relaxed">

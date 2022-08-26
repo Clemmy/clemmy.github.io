@@ -6,6 +6,11 @@
   --sky-400: #38bdf8;
 }
 
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/quicksand.ttf");
+}
+
 html {
   height: 100%;
 }

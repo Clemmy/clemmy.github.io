@@ -38,7 +38,7 @@ function VenmoModal({
               layout="constrained"
             />
           </div>
-          <span className="text-lg leading-relaxed">
+          <span className="leading-relaxed">
             Or{' '}
             <a className="underline" href={VENMO_URL} target="_blank">
               click here.
@@ -56,7 +56,7 @@ export function VenmoButton() {
     <Fragment>
       <button
         className={cx(
-          'text-white border-0 py-2 px-6 hover:brightness-75 flex flex-col items-center justify-center rounded-t text-lg bg-yellow-800 w-full cursor mb-3.5'
+          'text-white border-0 py-2 px-6 hover:brightness-75 flex flex-col items-center justify-center rounded-t bg-yellow-800 w-full cursor mb-3.5'
         )}
         onClick={() => {
           setIsModalOpen(!isModalOpen);
