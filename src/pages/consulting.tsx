@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { BackToHome } from '../components/BackToHome';
 import { ButtonWithIcon } from '../components/ButtonWithIcon';
 import { Layout } from '../components/Layout';
 import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
@@ -10,6 +11,7 @@ const ConsultingPage = () => {
         <title>Consulting and Mentorship</title>
       </Helmet>
       <div className="flex flex-col lg:w-2/5 md:w-4/6 w-full">
+        <BackToHome className="mb-6" />
         <h1 className="text-5xl mb-4 font-medium leading-tight text-sky-400">
           Consulting and Mentorship
         </h1>
