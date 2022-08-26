@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { ButtonWithIcon } from '../components/ButtonWithIcon';
-import { FlippableAvatar } from '../components/FlippableAvatar';
+import { Avatar } from '../components/Avatar';
 import { Layout } from '../components/Layout';
 import { VenmoButton } from '../components/VenmoButton';
 
@@ -15,7 +15,7 @@ const IndexPage = () => {
           content="Where you can find a map of Clement's online footprint."
         />
       </Helmet>
-      <FlippableAvatar />
+      <Avatar />
       <div className="text-center lg:w-2/5 md:w-4/6 w-full">
         <h1 className="text-5xl mb-4 font-medium leading-tight text-sky-400">
           Clement Hoang

@@ -40,6 +40,10 @@ const containerStyles = css`
   }
 `;
 
+/**
+ * The FlippableAvatar ended up looking pretty janky on browsers outside of Chrome.
+ * So I'll use a more basic avatar for now (Avatar.tsx). We might re-visit this one day.
+ */
 export function FlippableAvatar() {
   const size = useWindowSize();
   const [containerHeight, setContainerHeight] = useState(0);
