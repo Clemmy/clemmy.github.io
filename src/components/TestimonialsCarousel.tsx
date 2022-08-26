@@ -54,8 +54,8 @@ export function TestimonialsCarousel() {
         modules={[Autoplay, Pagination, Navigation]}
         className="w-full p-10"
       >
-        {testimonials.map((testimonial) => (
-          <SwiperSlide>
+        {testimonials.map((testimonial, i) => (
+          <SwiperSlide key={i}>
             <TestimonialSlideContents
               message={testimonial.message}
               author={testimonial.author}
